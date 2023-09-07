@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-vrm
+![demo](https://github.com/massu-159/next-vrm/assets/75517054/40e669ed-a6e1-49c9-943b-d8d6735e43eb)
 
-## Getting Started
+VRMファイルを読み込んで、３D表示するアプリケーションのサンプル
+three.jsを使用しています。
+MUI
 
-First, run the development server:
+urlはこちら
+https://github.com/massu-159/next-vrm
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+参考URL
+https://synamon.hatenablog.com/entry/2023/06/06/181313
+
+## 目次
+1. 環境構築
+2. アプリケーションの仕様
+
+## 1. 環境構築
+
+### 1-1. ライブラリ インストール
+
+```
+npm install
+
+または
+
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1-2. アプリケーション実行
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+または
 
-## Learn More
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 2. アプリケーションの仕様
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2-1. 仕様
+- vrmファイル
+  - VRMファイル表示
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 2-2. 構成技術
+- @emotion/react : ^11.11.1
+- @emotion/styled : ^11.11.0
+- @mui/material : ^5.14.8
+- @pixiv/three-vrm : ^2.0.4
+- @react-three/drei : ^9.83.3
+- @react-three/fiber : ^8.14.1
+- @types/three : ^0.154.0
+- eslint : 8.48.0
+- eslint-config-next : 13.4.19
+- next : 13.4.19
+- react : 18.2.0
+- react-dom : 18.2.0
+- three : ^0.154.0
+- typescript : 5.2.2
